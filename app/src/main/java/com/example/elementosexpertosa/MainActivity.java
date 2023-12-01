@@ -53,16 +53,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-/*
-        Button elevatedButton=(Button) findViewById(R.id.elevatedButton);
-        elevatedButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
 
- */
+
         /*FRAGMENTO*/
         BlankFragment miPrimerFragmento = new BlankFragment();
         //Obtener el FragmentManager
