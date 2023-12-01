@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedorIcons"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:id="@+id/botonFlecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconSize="24dp"
+            app:iconGravity="start"
+            />
+ 
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+        <!-- Esto permite que los botones siguientes se alineen a la derecha -->
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:id="@+id/botonFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:icon="@drawable/ic_favorite"
+            app:iconSize="24dp"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:id="@+id/botonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:icon="@drawable/ic_share"
+            app:iconSize="24dp"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:id="@+id/botonMenu"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_menu_puntosverticales"
+            app:iconSize="24dp"
+            app:iconGravity="start" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedorFragmento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedorFragmento2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+    </LinearLayout>
+
+
+</LinearLayout>
