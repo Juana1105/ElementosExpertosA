@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
         android:layout_height="200dp"
-        android:src="@drawable/perrito_uno" /> <!-- Aquí se mostrarán las imágenes -->
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/perrito_uno"
+            android:layout_gravity="center"/> <!-- Aquí se mostrarán las imágenes -->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Imagen de un perrito lindo"
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Imagen de un perrito lindo"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+
 </LinearLayout>
+
