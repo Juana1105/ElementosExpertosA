@@ -23,8 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             app:icon="@drawable/ic_arrow_back"
-            app:iconSize="24dp"
-            app:iconGravity="start"
+            app:iconSize="40dp"
             />
  
         <Space
@@ -41,7 +40,7 @@
             android:layout_marginEnd="10dp"
             app:icon="@drawable/ic_favorite"
             app:iconSize="24dp"
-            app:iconGravity="start" />
+             />
 
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.IconButton.Filled"
@@ -51,7 +50,7 @@
             android:layout_marginEnd="10dp"
             app:icon="@drawable/ic_share"
             app:iconSize="24dp"
-            app:iconGravity="start" />
+             />
 
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.IconButton.Filled"
@@ -61,7 +60,7 @@
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_menu_puntosverticales"
             app:iconSize="24dp"
-            app:iconGravity="start" />
+            />
 
     </LinearLayout>
 
@@ -75,9 +74,12 @@
         android:id="@+id/contenedorFragmento2"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         >
     </LinearLayout>
+
+
+
 
 
 </LinearLayout>
